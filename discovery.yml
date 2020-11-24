@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: "discovery"
+server:
+  port: 8761
+
+eureka:
+  instance:
+    hostname: "localhost"
+  client:
+    #discovery server: does not register with other discovery instance
+    register-with-eureka: false
+    fetch-registry: false
+    serviceUrl:
+      #telling this server that it is operating in the default zone, this matches the config client's region setting
+      defaultZone: "http://localhost:8761/eureka/"
+
+
