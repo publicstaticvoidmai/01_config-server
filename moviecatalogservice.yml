@@ -8,5 +8,5 @@ eureka:
     serviceUrl:
       defaultZone: "http://localhost:8761/eureka/"
 
-testmessage: "kinid schreit nicht mehr"
+testmessage: "langsam"
 
